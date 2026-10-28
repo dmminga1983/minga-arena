@@ -1,0 +1,74 @@
+{
+  "id": "writing",
+  "name": "Writing",
+  "about": "Posts, scripts, headlines, letters, landing pages, anything a person reads or says out loud.",
+  "criteria": [
+    {
+      "id": "fit",
+      "weight": 25,
+      "question": "Does it fit the audience, the channel and the goal the task states?",
+      "anchors": {
+        "10": "exactly right for who reads it and where",
+        "7": "right, one slip in tone or length",
+        "4": "written for someone else",
+        "0": "wrong audience or wrong goal"
+      }
+    },
+    {
+      "id": "specificity",
+      "weight": 20,
+      "question": "Numbers, names and concrete details instead of adjectives?",
+      "anchors": {
+        "10": "concrete all the way through",
+        "7": "mostly concrete",
+        "4": "mostly adjectives",
+        "0": "pure filler"
+      }
+    },
+    {
+      "id": "voice",
+      "weight": 20,
+      "question": "Does it sound like a person: no stock phrases, no AI tells, sayable out loud if it will be spoken?",
+      "anchors": {
+        "10": "reads as a real person wrote it",
+        "7": "one or two stock phrases",
+        "4": "clearly templated",
+        "0": "reads as generated"
+      }
+    },
+    {
+      "id": "correctness",
+      "weight": 20,
+      "question": "No false claims and no invented facts, quotes or numbers?",
+      "anchors": {
+        "10": "every claim true or marked as a placeholder",
+        "7": "one loose claim",
+        "4": "an invented fact",
+        "0": "built on invented facts"
+      }
+    },
+    {
+      "id": "structure",
+      "weight": 15,
+      "question": "Does the strongest thing come first and does every part earn its place?",
+      "anchors": {
+        "10": "strongest first, nothing to cut",
+        "7": "fine, one weak part",
+        "4": "buries the point",
+        "0": "no structure"
+      }
+    }
+  ],
+  "priority": [
+    {
+      "id": "say-it",
+      "name": "Say it out loud",
+      "how": "Read every line as if speaking it. Anything you would stumble on gets rewritten."
+    },
+    {
+      "id": "one-idea",
+      "name": "One idea",
+      "how": "Pick the single idea the piece is for and cut everything that serves a different one."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "general",
+  "name": "General",
+  "about": "Any task: an answer, a plan, a piece of text, a decision.",
+  "criteria": [
+    {
+      "id": "correctness",
+      "weight": 30,
+      "question": "Is it right? No false claims, no logic errors, nothing that would mislead the user.",
+      "anchors": {
+        "10": "nothing wrong after you checked it yourself",
+        "7": "small slips that do not change the outcome",
+        "4": "at least one real error the user would trip on",
+        "0": "wrong at the core, or harmful if used"
+      }
+    },
+    {
+      "id": "completeness",
+      "weight": 25,
+      "question": "Does it meet every requirement the task actually states?",
+      "anchors": {
+        "10": "every stated requirement met in full",
+        "7": "every requirement touched, one thin",
+        "4": "a stated requirement missing",
+        "0": "answers a different question"
+      }
+    },
+    {
+      "id": "robustness",
+      "weight": 20,
+      "question": "Does it hold up against the attacks raised in this match?",
+      "anchors": {
+        "10": "every attack fixed or correctly rebutted, nothing new broken",
+        "7": "one MINOR attack still standing",
+        "4": "a MAJOR attack standing, or a fix that broke something",
+        "0": "a FATAL attack standing"
+      }
+    },
+    {
+      "id": "specificity",
+      "weight": 15,
+      "question": "Could the user act on it right now without guessing?",
+      "anchors": {
+        "10": "every part can be acted on immediately",
+        "7": "one or two places need a guess",
+        "4": "mostly 'consider' and 'it depends'",
+        "0": "generic advice that fits any task"
+      }
+    },
+    {
+      "id": "clarity",
+      "weight": 10,
+      "question": "Is it easy to read and use, at a length that fits the task?",
+      "anchors": {
+        "10": "the shape makes it obvious how to use it, no padding",
+        "7": "fine, some padding",
+        "4": "the user has to dig for the answer",
+        "0": "hard to follow"
+      }
+    }
+  ],
+  "priority": []
+}

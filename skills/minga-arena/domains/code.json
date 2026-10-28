@@ -1,0 +1,74 @@
+{
+  "id": "code",
+  "name": "Code",
+  "about": "Bugs, features, refactors, scripts, configs. Solutions come back as diffs or full files, never applied.",
+  "criteria": [
+    {
+      "id": "correctness",
+      "weight": 35,
+      "question": "Does the code do what the task asks, with no bugs you can find by reading or running it?",
+      "anchors": {
+        "10": "works, and you checked it",
+        "7": "works, minor issue",
+        "4": "a real bug in a normal case",
+        "0": "does not run or does the wrong thing"
+      }
+    },
+    {
+      "id": "verification",
+      "weight": 20,
+      "question": "Does it prove itself: tests, a reproduction, or a clear way to check it?",
+      "anchors": {
+        "10": "tests or checks that would catch a regression",
+        "7": "some checks, gaps",
+        "4": "claims it works with nothing to show",
+        "0": "no way to know"
+      }
+    },
+    {
+      "id": "completeness",
+      "weight": 20,
+      "question": "Does it cover every requirement, including the edge cases the task names?",
+      "anchors": {
+        "10": "all requirements and named edge cases",
+        "7": "one thin spot",
+        "4": "a requirement missing",
+        "0": "a different problem solved"
+      }
+    },
+    {
+      "id": "safety",
+      "weight": 15,
+      "question": "Is it safe to apply: no secrets, no data loss, no breaking change the task did not ask for?",
+      "anchors": {
+        "10": "safe to merge as is",
+        "7": "one risk, flagged",
+        "4": "an unflagged risk",
+        "0": "would cause damage"
+      }
+    },
+    {
+      "id": "clarity",
+      "weight": 10,
+      "question": "Is it readable and in the style of the codebase?",
+      "anchors": {
+        "10": "reads like the rest of the code",
+        "7": "fine, some noise",
+        "4": "hard to review",
+        "0": "unreadable"
+      }
+    }
+  ],
+  "priority": [
+    {
+      "id": "tests-pin",
+      "name": "Pin it with a test",
+      "how": "Write the failing test that captures the problem first, then make it pass with the smallest change."
+    },
+    {
+      "id": "no-new-deps",
+      "name": "No new dependencies",
+      "how": "Solve it with what the project already uses. A new dependency needs a reason the task gives you."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "minga-arena",
+  "owner": {
+    "name": "dmminga1983",
+    "url": "https://github.com/dmminga1983"
+  },
+  "metadata": {
+    "description": "minga-arena: a sub-agent tournament for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "minga-arena",
+      "source": "./",
+      "description": "Sub-agents get the identical task and different strategy cards, attack each other's solutions, defend and revise, and a judge scores every match until one solution survives.",
+      "category": "productivity",
+      "tags": ["subagents", "tournament", "arena"]
+    }
+  ]
+}

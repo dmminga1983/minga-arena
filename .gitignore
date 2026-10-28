@@ -1,0 +1,27 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# run output of the skills
+.arena/
+replica/
+out/
+
+# build
+dist/
+*.zip
+
+# os / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

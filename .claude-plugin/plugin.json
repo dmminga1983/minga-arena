@@ -1,0 +1,14 @@
+{
+  "name": "minga-arena",
+  "displayName": "Minga · Arena",
+  "version": "1.0.0",
+  "description": "A tournament of sub-agents for answers that are not good enough: same task, different strategy cards, attack, defend, judge, one solution left. Default 16 agents, model per role by budget.",
+  "author": {
+    "name": "dmminga1983",
+    "url": "https://github.com/dmminga1983"
+  },
+  "homepage": "https://github.com/dmminga1983/minga-arena",
+  "repository": "https://github.com/dmminga1983/minga-arena",
+  "license": "MIT",
+  "keywords": ["claude-code", "subagents", "multi-agent", "tournament", "arena", "minga"]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "legal",
+  "name": "Legal documents",
+  "about": "Pre-trial claims, complaints, contract clauses, replies to claims. Not legal advice: the winning draft still goes to a lawyer when money is at stake.",
+  "criteria": [
+    {
+      "id": "basis",
+      "weight": 30,
+      "question": "Is every demand backed by a correct, current legal norm (article, law, contract clause) that actually applies?",
+      "anchors": {
+        "10": "every demand has a correct, applicable norm",
+        "7": "one norm imprecise",
+        "4": "a demand without a basis or a wrong norm",
+        "0": "norms invented or not applicable"
+      }
+    },
+    {
+      "id": "evidence",
+      "weight": 25,
+      "question": "Does every fact point to evidence the sender actually has (document, date, act, photo, correspondence)?",
+      "anchors": {
+        "10": "every fact tied to evidence",
+        "7": "one fact without evidence",
+        "4": "key facts unsupported",
+        "0": "assertions only"
+      }
+    },
+    {
+      "id": "demands",
+      "weight": 20,
+      "question": "Are the demands specific: amounts with calculation, deadlines, how to pay or fix, what happens if ignored?",
+      "anchors": {
+        "10": "exact amounts, calculation, deadline, consequence",
+        "7": "one element vague",
+        "4": "amounts or deadlines missing",
+        "0": "no clear demand"
+      }
+    },
+    {
+      "id": "completeness",
+      "weight": 15,
+      "question": "Does it cover every claim and every requirement the task gives, including formal details (parties, dates, signatures, attachments)?",
+      "anchors": {
+        "10": "nothing missing",
+        "7": "one formal detail missing",
+        "4": "a claim from the task missing",
+        "0": "incomplete"
+      }
+    },
+    {
+      "id": "clarity",
+      "weight": 10,
+      "question": "Would the other side's lawyer find nothing to misread or twist?",
+      "anchors": {
+        "10": "unambiguous",
+        "7": "one loose phrase",
+        "4": "several ambiguities",
+        "0": "confusing"
+      }
+    }
+  ],
+  "priority": [
+    {
+      "id": "opponent",
+      "name": "The other side's lawyer",
+      "how": "Write it as if the opponent's lawyer will read every line looking for a way out. Close every one."
+    },
+    {
+      "id": "norm-per-demand",
+      "name": "A norm for every demand",
+      "how": "No demand without the article or clause it rests on, and the calculation next to every amount."
+    },
+    {
+      "id": "court-ready",
+      "name": "Court-ready",
+      "how": "Write it so it can be attached to a lawsuit unchanged: dates, evidence list, delivery method."
+    }
+  ]
+}

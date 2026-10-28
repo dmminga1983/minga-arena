@@ -1,0 +1,31 @@
+name: CI
+
+# Safe triggers only: `pull_request` runs fork PRs without secrets and with a
+# read-only token. Never switch this to `pull_request_target`.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      # Actions are pinned to full commit SHAs (tags can be moved).
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Run tests (standard library only)
+        shell: bash
+        run: |
+          PY=$(command -v python3 || command -v python)
+          "$PY" --version
+          "$PY" -m unittest discover -s tests -v

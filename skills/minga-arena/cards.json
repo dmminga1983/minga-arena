@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "about": "Strategy cards for minga-arena. Every competitor gets the same task and one card: one way of thinking, one way of working and one priority. The dealer never repeats a card and spreads every part as evenly as it can. Domain packs in domains/ add their own priorities on top of these. Edit freely.",
+  "thinking": [
+    {"id": "roots", "name": "Back to the roots", "how": "Throw away how this is usually done. Find the few facts that are certainly true about the problem and build the answer up from those alone."},
+    {"id": "inversion", "name": "Inversion", "how": "First work out how the answer would fail: what would make it wrong, useless or rejected. Then make sure yours does none of those things."},
+    {"id": "transfer", "name": "Borrow from another field", "how": "Find a field where a problem of the same shape was already solved well, take the mechanism that solved it, and adapt it here."},
+    {"id": "red-team", "name": "Red team", "how": "Act as the most hostile reviewer of your own draft. After every draft, break it on purpose and only keep what survives."},
+    {"id": "limits", "name": "Limits first", "how": "List every hard limit in the task (length, format, time, money, stack, law) before you think about content. Design inside them, not around them."},
+    {"id": "case", "name": "One real case", "how": "Pick one concrete, realistic instance of the problem and solve it completely, then generalise only as far as the task needs."},
+    {"id": "questions", "name": "Questions first", "how": "Write the ten questions a sharp expert would ask about this task, answer each one as well as the task allows, and build the solution from the answers."},
+    {"id": "contrarian", "name": "Against the grain", "how": "Find the answer most people would give, assume it is subtly wrong, and look for the version that fixes what it gets wrong. Keep the obvious answer only if it survives."},
+    {"id": "system", "name": "The whole system", "how": "Map who and what the answer touches: inputs, people, side effects, what happens next week. Optimise the whole, not the one part the task names."},
+    {"id": "split", "name": "Split it", "how": "Break the task into independent parts, solve each one properly, then check the joins between them, which is where these answers usually break."},
+    {"id": "from-done", "name": "From the finish line", "how": "Describe exactly what done looks like for the person who asked, then walk backwards step by step to where they are now."},
+    {"id": "odds", "name": "Odds and bets", "how": "Treat every claim as a bet. Say how sure you are, put most of the effort where being wrong costs the most, and say plainly where you are guessing."},
+    {"id": "dialectic", "name": "Argue both sides", "how": "Write the strongest case for two opposite approaches, then build an answer that keeps what is right in both."},
+    {"id": "evidence", "name": "Evidence first", "how": "Collect everything the task gives you (files, data, quotes, rules) before forming any view. Every claim in the answer must point back to something in that pile."},
+    {"id": "panel", "name": "Three experts", "how": "Imagine three different experts reviewing the task: a practitioner, a critic and the end user. Write the answer all three would sign."}
+  ],
+  "working": [
+    {"id": "draft-cut", "name": "Draft, then cut", "how": "Write a complete draft fast, then cut it by a third without losing anything the task requires."},
+    {"id": "skeleton", "name": "Skeleton first", "how": "Write the outline and check it against every requirement before writing a single full sentence."},
+    {"id": "check-first", "name": "Checks first", "how": "Write down how you will prove the answer is right (tests, examples, a checklist) before writing the answer, then make it pass."},
+    {"id": "gather", "name": "Gather, then write", "how": "Read everything the task points to and take notes first. Write only after you know what is there."},
+    {"id": "three-ways", "name": "Three ways, keep one", "how": "Sketch three genuinely different answers in a few lines each, pick the strongest, and develop only that one."},
+    {"id": "checklist", "name": "Requirement checklist", "how": "Turn the task into a numbered checklist of requirements. Tick every item off against the finished answer before you submit."},
+    {"id": "deepen", "name": "Layer by layer", "how": "Answer at one-line depth, then one-paragraph depth, then full depth, keeping each layer consistent with the one above."},
+    {"id": "build-break", "name": "Build, then break", "how": "Build the answer, then attack it with the three nastiest inputs or objections you can think of, and fix what breaks."},
+    {"id": "smallest", "name": "Smallest working version", "how": "Get the smallest answer that fully works, then add only what the task explicitly asks for."},
+    {"id": "options", "name": "Options table", "how": "Lay out the realistic options against the task's criteria in a small table, choose with a stated reason, then write the chosen one in full."},
+    {"id": "unknowns", "name": "Unknowns first", "how": "List what you do not know and what the task leaves open. Resolve each with the most reasonable reading and state it before you start."},
+    {"id": "write-reorder", "name": "Write, then reorder", "how": "Write everything you need to say, then reorder it so the reader gets the most important thing first and can stop reading early."}
+  ],
+  "priority": [
+    {"id": "simple", "name": "Simplest thing that works", "how": "When in doubt, choose the simpler option. Fewer parts, fewer steps, fewer words."},
+    {"id": "rigour", "name": "Rigour", "how": "Every claim checked, every step justified, every number traceable. Slower and longer is acceptable if it is more correct."},
+    {"id": "reader", "name": "The reader first", "how": "Optimise for the person who will use this: their level, their time, their next action."},
+    {"id": "edges", "name": "Edge cases", "how": "Spend most of the effort on the unusual inputs, the exceptions and the ways it can go wrong."},
+    {"id": "speed", "name": "Fast to use", "how": "The user should be able to act on this within five minutes. Cut anything that slows that down."},
+    {"id": "safe", "name": "Safe by default", "how": "Prefer the option that cannot do harm if something is misunderstood: reversible, explicit, conservative."},
+    {"id": "clear", "name": "Clarity above all", "how": "If a sentence can be misread, rewrite it. Plain words, short sentences, one idea each."},
+    {"id": "complete", "name": "Nothing missing", "how": "Cover every requirement fully, including the small ones people usually skip."},
+    {"id": "few-parts", "name": "Fewest moving parts", "how": "Minimise dependencies, steps and things that can break or need maintenance."},
+    {"id": "tradeoffs", "name": "Honest trade-offs", "how": "Make every trade-off explicit: what you chose, what it costs, and when the other choice would be better."},
+    {"id": "lasting", "name": "Built to last", "how": "Prefer the answer that still works in a year, with more users, more data or a new person maintaining it."},
+    {"id": "specific", "name": "Concrete specifics", "how": "Exact values, names, commands, wording. Replace every 'consider' and 'ensure' with the actual thing to do."}
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "expertise",
+  "name": "Construction expertise review",
+  "about": "Reviewing a construction-technical expert report or a warranty case: every conclusion must follow the chain FACT -> EVIDENCE -> NORM -> CONCLUSION.",
+  "criteria": [
+    {
+      "id": "chain",
+      "weight": 30,
+      "question": "Does every conclusion follow the full chain FACT -> EVIDENCE -> NORM -> CONCLUSION, with no link skipped?",
+      "anchors": {
+        "10": "every conclusion has all four links",
+        "7": "one link thin",
+        "4": "a conclusion with a missing link",
+        "0": "conclusions without a chain"
+      }
+    },
+    {
+      "id": "norms",
+      "weight": 25,
+      "question": "Are the cited norms (SP, GOST, SNiP, methodology) the right ones, the right edition, and applied to the right object and date?",
+      "anchors": {
+        "10": "all correct and applicable",
+        "7": "one edition or clause imprecise",
+        "4": "a wrong or outdated norm relied on",
+        "0": "norms invented or misapplied"
+      }
+    },
+    {
+      "id": "causality",
+      "weight": 20,
+      "question": "Is the cause of each defect established (design, construction, operation) rather than assumed, and tied to the responsible party?",
+      "anchors": {
+        "10": "cause proven for each defect",
+        "7": "one cause assumed",
+        "4": "causes mostly assumed",
+        "0": "no causal analysis"
+      }
+    },
+    {
+      "id": "objectivity",
+      "weight": 15,
+      "question": "Does it state contradictions and weaknesses honestly, including those that hurt the side asking?",
+      "anchors": {
+        "10": "all weaknesses stated",
+        "7": "one weakness glossed",
+        "4": "one-sided",
+        "0": "advocacy, not analysis"
+      }
+    },
+    {
+      "id": "clarity",
+      "weight": 10,
+      "question": "Can a manager act on it: statuses of conclusions, what to do next, in plain words?",
+      "anchors": {
+        "10": "clear statuses and next steps",
+        "7": "fine",
+        "4": "hard to act on",
+        "0": "unusable"
+      }
+    }
+  ],
+  "priority": [
+    {
+      "id": "chain-check",
+      "name": "Check every link",
+      "how": "Walk each conclusion back through FACT -> EVIDENCE -> NORM and mark the status of every link before writing anything else."
+    },
+    {
+      "id": "measurement",
+      "name": "Measurement first",
+      "how": "Check how each measurement was taken (instrument, verification, method, conditions) before trusting any number in the report."
+    }
+  ]
+}
